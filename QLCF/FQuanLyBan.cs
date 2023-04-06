@@ -340,7 +340,7 @@ namespace QLCF
         {
             if (label1.Text == "label1")
             {
-                FQuanLyKho quanLyKho = new FQuanLyKho();
+                fQuanLyKho quanLyKho = new fQuanLyKho();
                 quanLyKho.ShowDialog();
             }
             else
