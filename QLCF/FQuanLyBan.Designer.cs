@@ -96,7 +96,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(342, 45);
+            this.numericUpDown1.Location = new System.Drawing.Point(350, 40);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -122,8 +122,10 @@
             // btAddFood
             // 
             this.btAddFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btAddFood.BackgroundImage")));
-            this.btAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btAddFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btAddFood.FlatAppearance.BorderSize = 0;
+            this.btAddFood.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btAddFood.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btAddFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAddFood.Location = new System.Drawing.Point(260, 10);
             this.btAddFood.Name = "btAddFood";
@@ -182,8 +184,10 @@
             // btDiscount
             // 
             this.btDiscount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btDiscount.BackgroundImage")));
-            this.btDiscount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btDiscount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btDiscount.FlatAppearance.BorderSize = 0;
+            this.btDiscount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btDiscount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btDiscount.Location = new System.Drawing.Point(123, 0);
             this.btDiscount.Name = "btDiscount";
@@ -195,8 +199,10 @@
             // btChangeTable
             // 
             this.btChangeTable.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btChangeTable.BackgroundImage")));
-            this.btChangeTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btChangeTable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btChangeTable.FlatAppearance.BorderSize = 0;
+            this.btChangeTable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btChangeTable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btChangeTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btChangeTable.Location = new System.Drawing.Point(33, 0);
             this.btChangeTable.Name = "btChangeTable";
@@ -217,12 +223,14 @@
             // btPayBill
             // 
             this.btPayBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btPayBill.BackgroundImage")));
-            this.btPayBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btPayBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btPayBill.FlatAppearance.BorderSize = 0;
+            this.btPayBill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btPayBill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btPayBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPayBill.Location = new System.Drawing.Point(327, 12);
             this.btPayBill.Name = "btPayBill";
-            this.btPayBill.Size = new System.Drawing.Size(77, 57);
+            this.btPayBill.Size = new System.Drawing.Size(80, 73);
             this.btPayBill.TabIndex = 3;
             this.btPayBill.UseVisualStyleBackColor = true;
             this.btPayBill.Click += new System.EventHandler(this.btPayBill_Click);
