@@ -67,11 +67,23 @@
     <Compile Include="BillInfo.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="FLogin.cs">
+    <Compile Include="fAddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FLogin.Designer.cs">
-      <DependentUpon>FLogin.cs</DependentUpon>
+    <Compile Include="fAddAccount.designer.cs">
+      <DependentUpon>fAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAdminManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdminManager.designer.cs">
+      <DependentUpon>fAdminManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Food.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -79,23 +91,35 @@
     <Compile Include="FoodCategory.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="FQuanLyBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FQuanLyBan.Designer.cs">
       <DependentUpon>FQuanLyBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FQuanLyKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FQuanLyKho.Designer.cs">
-      <DependentUpon>FQuanLyKho.cs</DependentUpon>
-    </Compile>
     <Compile Include="fSuaTTAcc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fSuaTTAcc.Designer.cs">
       <DependentUpon>fSuaTTAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThemDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemDanhMuc.designer.cs">
+      <DependentUpon>fThemDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThemThucAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemThucAn.designer.cs">
+      <DependentUpon>fThemThucAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -121,11 +145,26 @@
     <Compile Include="TableFood.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fAddAccount.resx">
+      <DependentUpon>fAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAdminManager.resx">
+      <DependentUpon>fAdminManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FQuanLyBan.resx">
       <DependentUpon>FQuanLyBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fQuanLyKho.resx">
-      <DependentUpon>FQuanLyKho.cs</DependentUpon>
+    <EmbeddedResource Include="fSuaTTAcc.resx">
+      <DependentUpon>fSuaTTAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemDanhMuc.resx">
+      <DependentUpon>fThemDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemThucAn.resx">
+      <DependentUpon>fThemThucAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +174,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -184,6 +224,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8-back-to-100.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

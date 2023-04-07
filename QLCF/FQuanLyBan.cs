@@ -28,7 +28,9 @@ namespace QLCF
         }
         private void FMenuChinh_Load(object sender, EventArgs e)
         {
-
+            label1.Text = $"Tên nhân viên: {QLCFDB.db.Account.FirstOrDefault(p => p.status == 1).DisplayName}";
+            var type = QLCFDB.db.Account.FirstOrDefault(p => p.status == 1).Type == 0 ? "Quản lý" : "Nhân viên";
+            label2.Text = $"Chức vụ: {type}";
             ShowTableButton();
             ShowCategories();
             ShowComboboxChangeTable();
@@ -338,10 +340,16 @@ namespace QLCF
         }
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (label1.Text == "label1")
+            var user = QLCFDB.db.Account.FirstOrDefault(p => p.status == 1);
+            if (user.Type==1)
             {
-                fQuanLyKho quanLyKho = new fQuanLyKho();
+                this.Hide();
+                fAdminManager quanLyKho = new fAdminManager();
                 quanLyKho.ShowDialog();
+                this.Show();
+                ShowTableButton();
+                ShowCategories();
+                ShowComboboxChangeTable();
             }
             else
             {
@@ -358,9 +366,9 @@ namespace QLCF
             DialogResult result = MessageBox.Show("bạn có muốn thoát ko ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                FLogin login = new FLogin();
-                login.ShowDialog();
+                var user = QLCFDB.db.Account.FirstOrDefault(p => p.status == 1);
+                user.status = 0;
+                QLCFDB.db.SaveChanges();
                 this.Close();
             }
 
