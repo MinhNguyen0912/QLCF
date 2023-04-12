@@ -103,7 +103,7 @@ namespace QLCF
         {
             var db = QLCFDB.db;
             var idtable = int.Parse(label3.Text.Split(' ')[1]);
-            dgvBill.DataSource = db.BillInfo.Where(p => p.Bill.TableFood.id == idtable && p.Bill.status == 1).Select(p => new { tenmon = p.Food.name, soluong = p.count, dongia = p.Food.price, thanhtien = p.count * p.Food.price, mahoadon = p.Bill.id }).ToList();
+            dgvBill.DataSource = db.BillInfo.Where(p => p.Bill.TableFood.id == idtable && p.Bill.status == 1).Select(p => new {TenMon = p.Food.name, SoLuong = p.count, DonGia = p.Food.price, ThanhTien = p.count * p.Food.price, MaHoaDon = p.Bill.id }).ToList();
 
             if (dgvBill.DataSource != null)
             {
@@ -247,7 +247,7 @@ namespace QLCF
                         db.SaveChanges();
                     }                                        
                 }
-                MessageBox.Show("thanh toán thành công", "Thông Báo", MessageBoxButtons.OK);
+                MessageBox.Show("Thanh toán thành công", "Thông Báo", MessageBoxButtons.OK);
                 loadBill();
                 ShowTableButton();
             }
@@ -363,7 +363,7 @@ namespace QLCF
         }
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("bạn có muốn thoát ko ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát ko ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 var user = QLCFDB.db.Account.FirstOrDefault(p => p.status == 1);
@@ -371,6 +371,16 @@ namespace QLCF
                 QLCFDB.db.SaveChanges();
                 this.Close();
             }
+
+        }
+
+        private void thôngTinTàiKhảoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

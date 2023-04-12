@@ -251,6 +251,7 @@
             this.dgvBill.Name = "dgvBill";
             this.dgvBill.Size = new System.Drawing.Size(406, 324);
             this.dgvBill.TabIndex = 0;
+            this.dgvBill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBill_CellContentClick);
             // 
             // menuStrip1
             // 
@@ -279,6 +280,7 @@
             this.thôngTinTàiKhảoToolStripMenuItem.Name = "thôngTinTàiKhảoToolStripMenuItem";
             this.thôngTinTàiKhảoToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
             this.thôngTinTàiKhảoToolStripMenuItem.Text = "Thông tin tài khoản";
+            this.thôngTinTàiKhảoToolStripMenuItem.Click += new System.EventHandler(this.thôngTinTàiKhảoToolStripMenuItem_Click);
             // 
             // sửaThôngTinTàiKhoảnToolStripMenuItem
             // 

@@ -257,6 +257,7 @@
             this.dgvBill.ReadOnly = true;
             this.dgvBill.Size = new System.Drawing.Size(762, 375);
             this.dgvBill.TabIndex = 0;
+            this.dgvBill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBill_CellContentClick);
             // 
             // tabPage2
             // 

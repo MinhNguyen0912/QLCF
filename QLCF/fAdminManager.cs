@@ -325,5 +325,9 @@ namespace QLCF
 
         }
 
+        private void dgvBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

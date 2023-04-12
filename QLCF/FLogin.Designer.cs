@@ -43,9 +43,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(70, 113);
+            this.label1.Location = new System.Drawing.Point(35, 59);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 42);
+            this.label1.Size = new System.Drawing.Size(117, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tài Khoản :";
             // 
@@ -55,9 +56,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(82, 187);
+            this.label2.Location = new System.Drawing.Point(41, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 42);
+            this.label2.Size = new System.Drawing.Size(109, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật Khẩu :";
             // 
@@ -67,9 +69,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(377, 359);
+            this.button1.Location = new System.Drawing.Point(188, 187);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 67);
+            this.button1.Size = new System.Drawing.Size(102, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "Đăng Nhập";
             this.button1.UseVisualStyleBackColor = false;
@@ -82,9 +85,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(623, 359);
+            this.button2.Location = new System.Drawing.Point(312, 187);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 67);
+            this.button2.Size = new System.Drawing.Size(96, 35);
             this.button2.TabIndex = 3;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = false;
@@ -92,30 +96,30 @@
             // 
             // txtTK
             // 
-            this.txtTK.Location = new System.Drawing.Point(338, 112);
+            this.txtTK.Location = new System.Drawing.Point(169, 58);
+            this.txtTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTK.Multiline = true;
             this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(467, 43);
+            this.txtTK.Size = new System.Drawing.Size(236, 24);
             this.txtTK.TabIndex = 4;
             // 
             // txtMK
             // 
-            this.txtMK.Location = new System.Drawing.Point(338, 187);
-            this.txtMK.Multiline = true;
+            this.txtMK.Location = new System.Drawing.Point(169, 101);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(467, 43);
-            this.txtMK.TabIndex = 5;
+            this.txtMK.Size = new System.Drawing.Size(236, 20);
+            this.txtMK.TabIndex = 6;
             this.txtMK.UseSystemPasswordChar = true;
             // 
             // fLogin
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(872, 490);
+            this.ClientSize = new System.Drawing.Size(436, 255);
             this.Controls.Add(this.txtMK);
             this.Controls.Add(this.txtTK);
             this.Controls.Add(this.button2);
@@ -123,6 +127,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";

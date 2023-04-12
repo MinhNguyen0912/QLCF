@@ -36,10 +36,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenTk = new System.Windows.Forms.TextBox();
             this.txtTenHienThi = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtMK = new System.Windows.Forms.TextBox();
             this.txtMkmoi = new System.Windows.Forms.TextBox();
             this.txtNhapLai = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,7 +113,7 @@
             this.txtTenTk.Enabled = false;
             this.txtTenTk.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenTk.Location = new System.Drawing.Point(172, 28);
-            this.txtTenTk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenTk.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenTk.Name = "txtTenTk";
             this.txtTenTk.Size = new System.Drawing.Size(185, 29);
             this.txtTenTk.TabIndex = 5;
@@ -123,37 +123,10 @@
             this.txtTenHienThi.Enabled = false;
             this.txtTenHienThi.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenHienThi.Location = new System.Drawing.Point(172, 87);
-            this.txtTenHienThi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenHienThi.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenHienThi.Name = "txtTenHienThi";
             this.txtTenHienThi.Size = new System.Drawing.Size(185, 29);
             this.txtTenHienThi.TabIndex = 6;
-            // 
-            // txtMK
-            // 
-            this.txtMK.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMK.Location = new System.Drawing.Point(172, 150);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(185, 29);
-            this.txtMK.TabIndex = 7;
-            // 
-            // txtMkmoi
-            // 
-            this.txtMkmoi.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMkmoi.Location = new System.Drawing.Point(172, 206);
-            this.txtMkmoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMkmoi.Name = "txtMkmoi";
-            this.txtMkmoi.Size = new System.Drawing.Size(185, 29);
-            this.txtMkmoi.TabIndex = 8;
-            // 
-            // txtNhapLai
-            // 
-            this.txtNhapLai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtNhapLai.Location = new System.Drawing.Point(172, 265);
-            this.txtNhapLai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNhapLai.Name = "txtNhapLai";
-            this.txtNhapLai.Size = new System.Drawing.Size(185, 29);
-            this.txtNhapLai.TabIndex = 9;
             // 
             // button1
             // 
@@ -165,12 +138,33 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(252, 298);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 70);
             this.button1.TabIndex = 10;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtMK
+            // 
+            this.txtMK.Location = new System.Drawing.Point(172, 155);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(185, 20);
+            this.txtMK.TabIndex = 11;
+            // 
+            // txtMkmoi
+            // 
+            this.txtMkmoi.Location = new System.Drawing.Point(172, 211);
+            this.txtMkmoi.Name = "txtMkmoi";
+            this.txtMkmoi.Size = new System.Drawing.Size(185, 20);
+            this.txtMkmoi.TabIndex = 12;
+            // 
+            // txtNhapLai
+            // 
+            this.txtNhapLai.Location = new System.Drawing.Point(172, 271);
+            this.txtNhapLai.Name = "txtNhapLai";
+            this.txtNhapLai.Size = new System.Drawing.Size(185, 20);
+            this.txtNhapLai.TabIndex = 13;
             // 
             // fSuaTTAcc
             // 
@@ -179,10 +173,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(377, 385);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNhapLai);
             this.Controls.Add(this.txtMkmoi);
             this.Controls.Add(this.txtMK);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTenHienThi);
             this.Controls.Add(this.txtTenTk);
             this.Controls.Add(this.label5);
@@ -190,7 +184,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fSuaTTAcc";
             this.Text = "Thông Tin Tài Khoản";
             this.Load += new System.EventHandler(this.fSuaTTAcc_Load);
@@ -208,9 +202,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTenTk;
         private System.Windows.Forms.TextBox txtTenHienThi;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.TextBox txtMkmoi;
         private System.Windows.Forms.TextBox txtNhapLai;
-        private System.Windows.Forms.Button button1;
     }
 }
